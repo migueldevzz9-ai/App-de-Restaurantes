@@ -106,15 +106,15 @@ def listar_restaurantes():
     
     voltar_ao_menu_principal()
 
-def alternar_estado_restaurante():
+def alternar_status_restaurante():
     """ Altera o status do restaurante entre ativado e desativado 
     
     Outputs:
     - Exibe mensagem indicando o sucesso da operação
 
     """
-    exibir_subtitulo("ALterando estado do restaurante")
-    nome_restaurante = input("Digite o nome do restaurante que deseja alterar o estado: ")
+    exibir_subtitulo("ALterando status do restaurante")
+    nome_restaurante = input("Digite o nome do restaurante que deseja alterar o status: ")
     restaurante_encontrado = False
 
     for restaurante in restaurantes:
@@ -145,7 +145,7 @@ def escolher_opcao():
         elif opcao_escolhida == 2: 
             listar_restaurantes()
         elif opcao_escolhida == 3: 
-            alternar_estado_restaurante()
+            alternar_status_restaurante()
         elif opcao_escolhida == 4: 
             finalizar_app()
         else: 
