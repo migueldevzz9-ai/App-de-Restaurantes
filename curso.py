@@ -113,7 +113,7 @@ def alternar_status_restaurante():
     - Exibe mensagem indicando o sucesso da operação
 
     """
-    exibir_subtitulo("ALterando status do restaurante")
+    exibir_subtitulo("Alterando status do restaurante")
     nome_restaurante = input("Digite o nome do restaurante que deseja alterar o status: ")
     restaurante_encontrado = False
 
